@@ -13,11 +13,12 @@
 - The backend of the official project was originally in Node.js, but this project has been adapted to work with a [Java Spring Boot](https://github.com/yeastgrow/paypal-springboot-demo) backend. 
 - For detailed invocation process documentation, please refer to the [paypal-springboot-demo](https://github.com/yeastgrow/paypal-springboot-demo) project.
 
-- The main PayPal APIs that will be covered in this project include:
- 1. **Order + Payment**
- 2. **Subscriptions**
- 3. **Invoices**
- 4. **Disputes**
+- PayPal API Integrations:
+  The project integrates several core PayPal APIs to facilitate a wide range of payment operations:
+  1. Orders and Payments: Manage orders and process payments efficiently. 
+  2. Subscriptions: Handle recurring payments with ease. 
+  3. Invoices: Create and send invoices to customers. 
+  4. Disputes: Address and manage disputes that may arise.
 
 ## Using Sandbox
 
@@ -33,14 +34,53 @@ To get started with testing, you need to:
 
 ## Running the Frontend Project
 
-To run the frontend project, follow these steps:
+This project is designed to work seamlessly with the backend, which you can find at [paypal-springboot-demo](https://github.com/yeastgrow/paypal-springboot-demo). Below are the steps to get your frontend running locally.
 
-1. Rename the file `.env.example` to `.env`.
-2. Add the necessary environment variables to the `.env` file.
-3. Install the frontend dependencies by running `npm install`.
-4. In the `client/App.jsx` file, locate the `initialOptions` object and enter your PayPal `client-id`.
-5. Modify the backend port information in the `vite.config.js` file.
-6. Start the frontend by running `npm run client-dev` in the project root directory.
-7. Open your browser and navigate to `http://localhost:3000/`.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+- Node.js and npm installed on your machine.
+- Basic understanding of JavaScript and React.
+
+Follow these steps to install and run the frontend project on your local machine.
+
+### Step 1: Clone the Repository
+
+Clone the project repository to your local machine using:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+### Step 2: Install Dependencies
+
+Navigate to the project directory and run:
+
+```bash
+npm install
+```
+
+### Step 3: Set Up PayPal Client ID
+
+In the `client/App.jsx` file, locate the `initialOptions` object and enter your PayPal `client-id`.
+
+### Step 4: Configure Backend Connection
+
+Modify the backend port information in the `vite.config.js` file to match your backend setup.
+
+### Step 5: Start the Development Server
+
+Run the following command in the project root directory to start the frontend:
+
+```bash
+npm run client-dev
+```
+
+### Step 6: Access the Application
+
+Open your web browser and navigate to `http://localhost:3000/` to view the frontend.
+
+
 
 We hope this project helps you understand and test PayPal APIs effectively. Feel free to contribute and provide feedback!

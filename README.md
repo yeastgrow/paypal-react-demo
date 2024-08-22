@@ -1,3 +1,7 @@
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/yeastgrow/paypal-react-demo/blob/master/README.md)
+[![zh](https://img.shields.io/badge/lang-zh-red.svg)](https://github.com/yeastgrow/paypal-react-demo/blob/master/README.zh.md)
+
+
 # Introduction
 
 - Welcome to the frontend repository of our project, which is designed to complement the backend project [paypal-springboot-demo](https://github.com/yeastgrow/paypal-springboot-demo). This project serves two main purposes:
